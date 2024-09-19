@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --title-font-family: "Raleway", sans-serifs;
+    --menu-font-family:  "Poppins", sans-serif;
+
+    --primary-color: #36b2ed;
+}
+
+/*----------- Gerneral -------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    display: grid;
+    grid-template-columns: 300px auto;
+
+    height: 200rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 2.986rem;
+}
+
+h2 {
+    font-size: 2.488rem;
+}
+
+h3 {
+    font-size: 2.074rem;
+}
+
+h4 {
+    font-size: 1.728rem;
+}
+
+h5 {
+    font-size: 1.44rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.small {
+    font-size: 0.8rem;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.title {
+  font-family: var(--title-font-family);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+section {
+  padding: 40px 0px;
+}
+
+section .container  {
+  padding: 10px 20px;
+}
+
+section .container .header {
+margin-bottom: 3%;
+}
+
+h2, p {
+  margin: 0px;
+}
+
+/*----------- Aside -------------*/
+
+aside {
+  width: 300px;
+  height: 100%;
+  background-color: #030910;
+  /* padding: 25px; */
+}
+
+aside .container {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  padding: 25px;
+}
+
+/* ### class : me */
+.me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.me .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.me .img img {
+  width: 120px;
+  height: 120px;
+  border: 10px solid #292F37;
+  border-radius: 50%;
+}
+
+.me .name h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* ### class : social-media */
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media .social-link {
+  padding: 4px;
+  margin: auto 4px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #292F37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3;
+}
+
+.social-media .social-link:hover {
+  background-color: #36b2ed;
+}
+
+/* ### class : nav */
+
+aside .nav {
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.nav .nav-item {
+  padding: 15px 10px;
+  font-family: var(--menu-font-family);
+  font-weight: 400;
+  width: 100%;
+}
+
+.nav .nav-item a span,
+.nav .nav-item a i {
+  display: inline-block;
+}
+
+.nav .nav-item:hover a span {
+  padding: auto 8px;
+}
+
+.nav .nav-item:hover a i {
+  transition: color 0.3s;
+}
+
+.nav .nav-item:hover a i {
+  color: var(--primary-color);
+}
+
+
+/*----------- Main -------------*/
+
+/* ### class : hero */
+.hero {
+  padding: 0px;
+}
+
+.hero img {
+  width: 100%;
+}
+
+/* ### class : about */
+
+
+
+.about .col {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.about .col .img {
+  margin: auto 12px auto auto;
+}
+
+.about .img img{
+  max-width: 100%;
+}
+
+.about .info .dtls{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+.about .info .dtls div{
+  padding: 10px;
+  font-size: 16px;
+  width: 50%;
+}
+
+.about .info .dtls div b{
+  font-weight: 700;
+}
+
+.about .info .dtls div span{
+  font-weight: 400;
+}
+
+.about .info .dtls div i{
+  color: var(--primary-color);
+}
+
+
+/*----------- Portfolio -------------*/
+
+.card-container {
+  margin: 14px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+
+.card-container .card {
+  background-color: red;
+  /* padding: 100px; */
+  border-radius: 14px;
+  width: 90%;
+  height: 170px;
+  margin: 16px 20px;
+}
+
+
+/* must add img to the selector */
+.card .card-body .card-img{ 
+  background-color: green;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  
+  height: 100%;
+  width: 100px;
+  padding: 85px;
+}
