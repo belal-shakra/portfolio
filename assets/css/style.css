@@ -4,7 +4,8 @@
     --title-font-family: "Raleway", sans-serifs;
     --menu-font-family:  "Poppins", sans-serif;
 
-    --primary-color: #36b2ed;
+    --primary-color: #BE782D;
+    --primary-hover-color: #F4D056;
 }
 
 /*----------- Gerneral -------------*/
@@ -16,6 +17,7 @@
 }
 
 body {
+    scroll-behavior: smooth;
     line-height: 1.6;
     display: grid;
     grid-template-columns: 300px auto;
@@ -69,7 +71,7 @@ a {
 .title {
   font-family: var(--title-font-family);
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -94,7 +96,7 @@ h2, p {
 aside {
   width: 300px;
   height: 100%;
-  background-color: #030910;
+  background-color: #BE782D;
   /* padding: 25px; */
 }
 
@@ -162,15 +164,26 @@ aside .nav {
   margin-top: 20px;
 }
 
-.nav .nav-item {
+.nav a .nav-item {
   padding: 15px 10px;
   font-family: var(--menu-font-family);
   font-weight: 400;
   width: 100%;
+  list-style-type: none;
+  border-radius: 14px;
+  font-weight: 600;
 }
 
-.nav .nav-item a span,
-.nav .nav-item a i {
+.nav a .nav-item:hover {
+  background-color: var(--primary-hover-color);
+}
+
+.nav a .nav-item:hover {
+  color: #BE782D;
+}
+
+.nav a .nav-item span,
+.nav a .nav-item i {
   display: inline-block;
 }
 
@@ -240,32 +253,11 @@ aside .nav {
 }
 
 
-/*----------- Portfolio -------------*/
+/*----------- Projects -------------*/
 
 .card-container {
   margin: 14px;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
 }
 
-
-.card-container .card {
-  background-color: red;
-  /* padding: 100px; */
-  border-radius: 14px;
-  width: 90%;
-  height: 170px;
-  margin: 16px 20px;
-}
-
-
-/* must add img to the selector */
-.card .card-body .card-img{ 
-  background-color: green;
-  border-top-left-radius: 14px;
-  border-bottom-left-radius: 14px;
-  
-  height: 100%;
-  width: 100px;
-  padding: 85px;
-}
