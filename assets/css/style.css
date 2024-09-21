@@ -260,16 +260,15 @@ aside .nav {
 /*----------- Projects -------------*/
 
 .card-container {
-  margin: 14px;
+  margin: 10px;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
 }
 
 .card {
   height: 21rem;
-  /* border: 1px solid; */
   border-radius: 12px;
-  margin: 0% 2%;
+  margin: 3% 2%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -325,3 +324,45 @@ aside .nav {
 
 
 /*----------- Certificates -------------*/
+/*----------- Contact -------------*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form .field {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+form .field input,
+form .field textarea {
+  border: 0px;
+  height: 48px;
+  width: 40%;
+  padding: 10px 14px;
+  font-size: 18px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-bottom: 3px solid #c28a4d;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+
+form .field input:focus,
+form .field textarea:focus {
+  outline: none;
+}
+
+form .field textarea {
+  height: 300px;
+}
+
+/*----------- Footer -------------*/
+footer {
+  text-align: center;
+  padding: 40px 0px 10px;
+}
