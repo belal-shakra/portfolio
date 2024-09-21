@@ -11,8 +11,8 @@
 <body>
 
 
-  <aside>
-    <div class="container">
+  <aside id="aside">
+    <div class="container" id="aside-container">
       <div class="me">
         <div class="img">
           <img src="./assets/imgs/me-2021.jpg" alt="my-pic">
@@ -87,6 +87,10 @@
 
   <main>
     <section class="hero" id="hero">
+      <div class="menu-icon" onclick="aside_display()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      
       <img src="./assets/imgs/hero.png" alt="">
     </section>
 
@@ -555,7 +559,6 @@
   </main>
 
 
-
-
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>

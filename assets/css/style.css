@@ -207,14 +207,30 @@ aside .nav {
 /* ### class : hero */
 .hero {
   padding: 0px;
+  /* position: relative; */
 }
 
 .hero img {
   width: 100%;
 }
 
-/* ### class : about */
+.hero .menu-icon {
+  position: fixed;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border: 1px solid;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
 
+.hero .menu-icon:hover {
+  background-color: var(--primary-hover-color);
+}
+
+/* ### class : about */
 
 
 .about .container .container {
@@ -485,8 +501,15 @@ footer {
   body {
     grid-template-columns: auto;
   }
-  aside {
+
+  aside .container {
     display: none;
+    background-color: var(--primary-color);
+    z-index: 99;
+  }
+
+  .hero .menu-icon {
+    display: block;
   }
 }
 
