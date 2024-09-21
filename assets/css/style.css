@@ -217,46 +217,131 @@ aside .nav {
 
 
 
-.about .col {
+.about .container .container {
   display: grid;
   grid-template-columns: 35% auto;
 }
 
-.about .col .img {
+.about .container .img {
   margin: auto 10% auto auto;
 }
 
-.about .img img{
+.about .container .img img{
   max-width: 100%;
   box-shadow: #9d9d9d 0px 7px 29px 0px;
   border-radius: 14PX;
 }
 
-.about .info .dtls{
+.about .container .info .dtls{
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
 }
 
-.about .info .dtls div{
+.about .container .info .dtls div{
   padding: 10px;
   font-size: 16px;
   width: 50%;
 }
 
-.about .info .dtls div b{
+.about .container .info .dtls div b{
   font-weight: 700;
 }
 
-.about .info .dtls div span{
+.about .container .info .dtls div span{
   font-weight: 400;
 }
 
-.about .info .dtls div i{
+.about .container .info .dtls div i{
   color: var(--primary-color);
 }
 
 
+/*----------- Resume -------------*/
+.resume .container .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 18px;
+}
+
+.container .overview {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.container .edu {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.container .pro {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.block .title {
+  font-family: var(--title-font-family);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 28px;
+  margin: 0px;
+}
+
+.sub-block {
+  border-left: 2px solid var(--primary-color);
+  margin-top: 8px;
+  position: relative;
+  padding-left: 21px;
+  font-family: var(--title-font-family);
+}
+
+.sub-block span.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  background-color: #fff;
+  position: absolute;
+  left: -9px;
+}
+
+.sub-block-title {
+  color: #525354;
+  font-weight: 500;
+  position: absolute;
+  top: -10px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.sub-block .content .date {
+  padding-left: 14px;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+
+.sub-block .content p.meta {
+  padding: 26px 0px 8px;
+  margin-bottom: 8px;
+}
+
+.sub-block .content p.details {
+  padding: 20px 0px 8px;
+  margin-bottom: 8px;
+}
+
+.sub-block .content ul {
+  padding-left: 21px;
+  margin-bottom: 6px;
+}
+
+.sub-block .content ul li {
+  padding-bottom: 10px;
+}
 /*----------- Projects -------------*/
 
 .card-container {
